@@ -25,6 +25,7 @@ namespace generateur_mdp
             string spec = "!@?#";
             string alphabet = "";
 
+            //En fonction du choix du user, on construit le type d'alphabet
             if (choix == 1)
             {
                 alphabet = minuscules;
@@ -47,10 +48,10 @@ namespace generateur_mdp
             int l = alphabet.Length;
 
             
-            for (int j = 0; j<NB_MDP; j++)
+            for (int j = 0; j<NB_MDP; j++) //Boucle sur chaque mot de passe
             {
 
-                for (int k = 0; k < longueurmdp; k++)
+                for (int k = 0; k < longueurmdp; k++) //Boucle pour construire chaque caractère du mdp en cours
                 {
                     Random rand = new Random();
                     int i = rand.Next(0, l);

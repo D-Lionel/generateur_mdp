@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FormationCS
 {
-    static class outils
+    static class outils //Classe servant à "stocker" les fonctions utiles pour le programme principal
     {
         public static int DemanderNombrePositifNonNul(string question)
         {
